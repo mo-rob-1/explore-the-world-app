@@ -1,3 +1,8 @@
 .App {
-  text-align: center;
+  text-align: left;
+}
+
+.card-img {
+  width: 300px;
+  height: 200px;
 }
