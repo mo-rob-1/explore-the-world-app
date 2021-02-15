@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from './components/ui/Header';
-import './App.css';
+import CountryCard from './components/ui/CountryCard';
 import Spinner from './components/ui/spinner/Spinner';
+import './App.css';
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -55,34 +56,6 @@ function App() {
   );
 }
 
-const CountryCard = (props) => {
-  const { name, flag, population, capital, region, demonym } = props;
-  return (
-        <div className="card">
-            <div className="card-img-container">
-                <img className='card-img' src={flag} alt={name} />
-            </div>
-            <div className="card-info-container">
-                <ul>
-                    <li>
-                        <strong>Country:</strong> {name} 
-                    </li>
-                    <li>
-                        <strong>Capital:</strong> {capital}
-                    </li>
-                    <li>
-                        <strong>Region:</strong> {region}
-                    </li>
-                    <li>
-                        <strong>Population:</strong> {population}
-                    </li>
-                    <li>
-                        <strong>Demonym:</strong> {demonym}
-                    </li>
-                </ul>
-            </div>
-        </div>
-  );
-};
+<CountryCard />
 
 export default App;
