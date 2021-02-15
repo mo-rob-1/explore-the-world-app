@@ -1,4 +1,5 @@
 import React from 'react';
+import './CountryCard.css';
 
 const CountryCard = (props) => {
     const { name, flag, population, capital, region, demonym } = props;

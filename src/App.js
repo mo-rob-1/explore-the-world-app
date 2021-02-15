@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from './components/ui/Header';
-import CountryCard from './components/ui/CountryCard';
+import CountryCard from './components/ui/CountryCard/CountryCard';
 import Spinner from './components/ui/spinner/Spinner';
 import './App.css';
 
