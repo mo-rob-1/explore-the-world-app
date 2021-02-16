@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from './components/ui/Header/Header';
 import CountryCard from './components/ui/CountryCard/CountryCard';
+import CountryPage from './components/pages/CountryPage/CountryPage';
 import Spinner from './components/ui/spinner/Spinner';
 import './App.css';
 
@@ -37,14 +39,17 @@ function App() {
   }
 
   return (
+    <Router>
     <div className="App">
       <Header />
-
-      <input
-          type="text"
-          placeholder="Search Countries"
-          onChange={(e) => setSearch(e.target.value)}
-      />
+      <Route exact path="/">
+      <div className="input-container">
+          <input
+              type="text"
+              placeholder="Search Countries"
+              onChange={(e) => setSearch(e.target.value)}
+          />
+      </div>
 
       <section className="cards">
         {filteredCountries.map((country, idx) => 
@@ -52,10 +57,13 @@ function App() {
           <CountryCard key={idx} {...country} />
         ))}
       </section>
+
+      </Route>
+
     </div>
+    <Route path="/:name" component={CountryPage}></Route>
+    </Router>
   );
 }
-
-<CountryCard />
 
 export default App;

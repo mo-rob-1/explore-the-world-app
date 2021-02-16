@@ -2,11 +2,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.App {
-  text-align: left;
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
-.card-img {
-  width: 300px;
-  height: 200px;
-}
