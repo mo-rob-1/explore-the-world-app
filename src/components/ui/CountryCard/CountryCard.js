@@ -6,27 +6,25 @@ const CountryCard = (props) => {
     const { name, flag, population, capital, region, demonym } = props;
 
     return (
-        <Link to={`/${name}`}>
+        <Link className="card__link" to={`/${name}`}>
             <div className="card">
-                <div className="card-img-container">
-                    <img className='card-img' src={flag} alt={name} />
+                <div className="card__img-container">
+                    <img className='card__img' src={flag} alt={name} />
                 </div>
-                <div className="card-info-container">
-                    <ul>
-                        <li>
-                            <strong>Country:</strong> {name} 
+                <div className="card__info-container">
+                    <h3 className="card__country">{name}</h3>
+                    <ul className="card__country-list-container">
+                        <li className="card__country-list-item">
+                            <p className="card__capital">Capital: {capital}</p>
                         </li>
-                        <li>
-                            <strong>Capital:</strong> {capital}
+                        <li className="card__country-list-item">
+                            <p className="card__region">Region: {region}</p>
                         </li>
-                        <li>
-                            <strong>Region:</strong> {region}
+                        <li className="card__country-list-item">
+                            <p className="card__population">Population: {population}</p>
                         </li>
-                        <li>
-                            <strong>Population:</strong> {population}
-                        </li>
-                        <li>
-                            <strong>Demonym:</strong> {demonym}
+                        <li className="card__country-list-item">
+                            <p className="card__population">Demonym: {demonym}</p>
                         </li>
                     </ul>
                 </div>
