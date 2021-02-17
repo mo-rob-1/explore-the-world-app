@@ -43,21 +43,21 @@ function App() {
     <div className="App">
       <Header />
       <Route exact path="/">
-      <div className="input-container">
-          <input
-              type="text"
-              placeholder="Search Countries"
-              onChange={(e) => setSearch(e.target.value)}
-          />
-      </div>
+        <div className="input-container">
+            <i class="fas fa-search"></i>
+            <input
+                type="text"
+                placeholder="Search Countries..."
+                onChange={(e) => setSearch(e.target.value)}
+            />
+        </div>
 
-      <section className="cards">
-        {filteredCountries.map((country, idx) => 
-        (
-          <CountryCard key={idx} {...country} />
-        ))}
-      </section>
-
+        <section className="cards">
+          {filteredCountries.map((country, idx) => 
+          (
+            <CountryCard key={idx} {...country} />
+          ))}
+        </section>
       </Route>
 
     </div>

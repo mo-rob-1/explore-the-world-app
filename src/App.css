@@ -1,11 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #202c36;
 }
 
 .input-container {
+  padding: 1rem;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  align-items: center;
+  margin: 2rem 1rem;
+  background-color: #2b3844;
+  box-shadow: 0px 2px 9px 0px rgb(0 0 0 / 5%);
+  border: 1px solid transparent;
+  outline: antiquewhite;
+  border-radius: 5px;
 }
+
+.input-container:hover {
+  border: 1px solid #fff;
+}
+
+input {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #2b3844;
+  width: 100%;
+  color: #fff;
+  outline: none;
+  margin-left: 8px;
+  font-size: 1rem;
+}
+
+.fa-search {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}
+
+@media (min-width: 425px) {
+  .input-container {
+    margin: 2rem 1.4rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .App {
+    padding-bottom: 2rem;
+  }
+  .input-container {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .input-container {
+    margin: 2rem 2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .input-container {
+    margin: 2rem 3rem;
+    width: 30%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .input-container {
+    margin: 2rem 12rem;
+    width: 20%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .input-container {
+    margin: 2rem 30rem;
+    width: 16%;
+  }
+}
+
 
