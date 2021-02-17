@@ -15,16 +15,16 @@ const CountryCard = (props) => {
                     <h3 className="card__country">{name}</h3>
                     <ul className="card__country-list-container">
                         <li className="card__country-list-item">
-                            <p className="card__capital">Capital: {capital}</p>
+                            <p className="card__capital"><strong>Capital:</strong> {capital}</p>
                         </li>
                         <li className="card__country-list-item">
-                            <p className="card__region">Region: {region}</p>
+                            <p className="card__region"><strong>Region:</strong> {region}</p>
                         </li>
                         <li className="card__country-list-item">
-                            <p className="card__population">Population: {population}</p>
+                            <p className="card__population"><strong>Population:</strong> {population}</p>
                         </li>
                         <li className="card__country-list-item">
-                            <p className="card__population">Demonym: {demonym}</p>
+                            <p className="card__population"><strong>Demonym:</strong> {demonym}</p>
                         </li>
                     </ul>
                 </div>
