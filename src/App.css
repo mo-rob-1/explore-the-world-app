@@ -72,14 +72,14 @@ input {
 
 @media (min-width: 1000px) {
   .input-container {
-    margin: 2rem 2rem;
+    margin: 2rem 5rem;
+    width: 30%;
   }
 }
 
 @media (min-width: 1400px) {
   .input-container {
-    margin: 2rem 3rem;
-    width: 30%;
+    margin: 2rem 8rem;
   }
 }
 
@@ -96,5 +96,3 @@ input {
     width: 16%;
   }
 }
-
-
