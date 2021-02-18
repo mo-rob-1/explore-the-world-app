@@ -4,12 +4,17 @@
     -moz-box-shadow:0 5px 5px rgba(37, 37, 37, 0.75);
     -webkit-box-shadow: 0 5px 5px rgba(37, 37, 37, 0.75);
     box-shadow: 0 5px 5px rgba(37, 37, 37, 0.75);
+    text-align: center;
 }
 
 .header__title {
     color: #fff;
-    text-align: center;
     margin: 0;
     font-size: 1.8rem;
     letter-spacing: 1px;
+    display: inline-block;
+}
+
+.header__link {
+    text-decoration: none;
 }
