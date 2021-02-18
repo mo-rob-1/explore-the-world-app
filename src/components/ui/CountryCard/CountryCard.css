@@ -61,8 +61,8 @@
     .card {
         margin-bottom: 0;
     }
-    .card__img {
-        height: 240px;
+    .card__img-container {
+        height: 14rem;
     }
 }
 
@@ -70,8 +70,8 @@
     .cards {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 }
 
@@ -79,8 +79,8 @@
     .cards {
         grid-template-columns: repeat(4, 1fr);
         gap: 3rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
     }
 }
 
@@ -99,4 +99,3 @@
         padding-right: 30rem;
     }
 }
-

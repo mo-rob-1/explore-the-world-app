@@ -21,7 +21,7 @@ const CountryCard = (props) => {
                             <p className="card__region"><strong>Region:</strong> {region}</p>
                         </li>
                         <li className="card__country-list-item">
-                            <p className="card__population"><strong>Population:</strong> {population}</p>
+                            <p className="card__population"><strong>Population:</strong> {population.toLocaleString("en-GB")}</p>
                         </li>
                         <li className="card__country-list-item">
                             <p className="card__population"><strong>Demonym:</strong> {demonym}</p>
