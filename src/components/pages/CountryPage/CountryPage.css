@@ -86,6 +86,9 @@
 }
 
 @media (min-width: 1024px) {
+    .CountryPage {
+        padding: 3rem;
+    }
     .country-pg__container-2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
