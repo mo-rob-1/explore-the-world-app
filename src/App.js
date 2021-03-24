@@ -43,13 +43,15 @@ function App() {
     <div className="App">
       <Header />
       <Route exact path="/">
-        <div className="input-container">
-            <i class="fas fa-search"></i>
-            <input
-                type="text"
-                placeholder="Search Countries..."
-                onChange={(e) => setSearch(e.target.value)}
-            />
+        <div className="input-box">
+          <div className="input-container">
+              <i class="fas fa-search"></i>
+              <input
+                  type="text"
+                  placeholder="Search Countries..."
+                  onChange={(e) => setSearch(e.target.value)}
+              />
+          </div>
         </div>
 
         <section className="cards">

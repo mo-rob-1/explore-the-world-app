@@ -1,6 +1,9 @@
 .cards {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1490px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card {
@@ -44,19 +47,13 @@
     font-size: 1.4rem;
 }
 
-@media (min-width: 425px) {
-    .cards {
-        padding-left: 1.4rem;
-        padding-right: 1.4rem;
-    }
-}
-
 @media (min-width: 700px) {
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
         gap: 2.5rem;
+        padding: 2rem;
     }
     .card {
         margin-bottom: 0;
@@ -70,8 +67,6 @@
     .cards {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
     }
 }
 
@@ -79,23 +74,11 @@
     .cards {
         grid-template-columns: repeat(4, 1fr);
         gap: 3rem;
-        padding-left: 8rem;
-        padding-right: 8rem;
     }
 }
 
 @media (min-width: 1920px) {
     .cards {
         gap: 3.5rem;
-        padding-left: 12rem;
-        padding-right: 12rem;
-    }
-}
-
-@media (min-width: 2560px) {
-    .cards {
-        gap: 3.5rem;
-        padding-left: 30rem;
-        padding-right: 30rem;
     }
 }

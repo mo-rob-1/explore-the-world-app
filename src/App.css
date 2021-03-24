@@ -68,6 +68,11 @@ input {
   .input-container {
     width: 40%;
   }
+  .input-box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1000px) {
