@@ -27,6 +27,10 @@ body {
   border: 1px solid #fff;
 }
 
+.input-container:focus-within{
+  border: 1px solid #fff;
+}
+
 input {
   border: 1px solid transparent;
   border-radius: 5px;
